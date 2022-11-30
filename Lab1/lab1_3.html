@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        #s1 {
+            background-color: whitesmoke;
+            position: absolute;
+            top: 10%;
+            left: 50%;
+
+        }
+
+        #s1 article {
+            display: inline-block;
+        }
+
+        #s1 article p {
+            padding-left: 10px;
+        }
+
+        article div {
+            width: 30px;
+            height: 300px;
+            margin: 20px;
+            background-color: wheat;
+        }
+
+        #bar1 {
+            width: 100%;
+            height: 70%;
+            background-color: white;
+            animation-name: bar1;
+            animation-duration: 2s;
+            animation-iteration-count: 4;
+        }
+
+        #bar2 {
+            width: 100%;
+            height: 60%;
+            background-color: white;
+            animation-name: bar2;
+            animation-duration: 2s;
+            animation-iteration-count: 4;
+        }
+
+        #bar3 {
+            width: 100%;
+            height: 20%;
+            background-color: white;
+            animation-name: bar3;
+            animation-duration: 2s;
+            animation-iteration-count: 4;
+        }
+
+        @keyframes bar1 {
+            0% {
+                height: 100%;
+                background-color: white;
+            }
+
+            100% {
+                height: 70%;
+                background-color: white;
+            }
+        }
+
+        @keyframes bar2 {
+            0% {
+                height: 100%;
+                background-color: white;
+            }
+
+            100% {
+                height: 60%;
+                background-color: white;
+            }
+        }
+
+        @keyframes bar3 {
+            0% {
+                height: 100%;
+                background-color: white;
+            }
+
+            100% {
+                height: 20%;
+                background-color: white;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <section id="s1">
+
+        <article>
+            <div>
+
+
+                <article id="bar1"></article>
+            </div>
+            <p>30%</p>
+        </article>
+        <article>
+            <div>
+
+
+                <article id="bar2"></article>
+            </div>
+            <p>40%</p>
+        </article>
+        <article>
+            <div>
+
+
+                <article id="bar3"></article>
+            </div>
+            <p>80%</p>
+        </article>
+        <h1>Bar Plot</h1>
+
+    </section>
+
+</body>
+
+</html>
